@@ -1,0 +1,15 @@
+.root{
+  display: flex;
+  border: 1px solid red;
+  height: 100%;
+  .menu{
+    height: 100%;
+    overflow: auto;
+  }
+  .renderMarkdown{
+    border: 1px solid red;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+  }
+}
