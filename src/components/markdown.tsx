@@ -2,7 +2,7 @@
 import MDEditor from '@uiw/react-md-editor'
 import { FC, useState } from 'react'
 type Component = {
-  books:string
+  books:any
 }
 
 const MarkdownPage: FC<Component> = ({books}) => {

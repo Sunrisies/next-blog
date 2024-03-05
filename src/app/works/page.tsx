@@ -1,3 +1,3 @@
 export default async () => {
-  return <div>works page</div>;
+  return <div>作品页面待开发...</div>;
 };

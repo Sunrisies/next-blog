@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Head from 'next/head';
 
 import { AntdRegistry } from '@ant-design/nextjs-registry'
@@ -9,7 +8,6 @@ import './globals.css'
 import styles from './globals.module.scss'
 import BlogIcon from '@/src/static/blog.svg'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,7 +25,7 @@ export default function RootLayout({
         <link rel="icon" href="BlogIcon" />
         {/* 其他头部元素 */}
       </Head>
-      <body className={inter.className}>
+      <body >
         <AntdRegistry>
           <div className={styles.main}>
             <Header className={styles.header}></Header>
