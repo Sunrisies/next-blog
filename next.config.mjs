@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
   output: 'standalone',
-  devServer: {  
-    port: 9090, // 设置开发服务器端口为 9090  
-  }, 
+  assetPrefix: isProd ? 'http://cdn.chaoyang1024.top' : '',
 };
 
 export default nextConfig;

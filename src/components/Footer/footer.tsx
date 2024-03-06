@@ -8,34 +8,32 @@ interface MyComponentProps {
 }
 
 const Header: FC<MyComponentProps> = ({ title, className }) => {
-  const [blogStartTime, setBlogStartTime] = useState(null);
-  const [elapsedTime, setElapsedTime] = useState(null);
-  // useEffect(() => {
-  //   // 设置博客开始时间（这里假设是在组件挂载时）
-  //   setBlogStartTime(moment("2020-03-05T21:07:28Z"));
+// const [runtime_span,setRuntime] = useState('')
+  
+//   const show_runtime = () => {
+//     X = new Date("10/24/2019 10:52:50");
+//     Y = new Date();
+//     T = Y.getTime() - X.getTime();
+//     M = 24 * 60 * 60 * 1000;
+//     a = T / M;
+//     A = Math.floor(a);
+//     b = (a - A) * 24;
+//     B = Math.floor(b);
+//     c = (b - B) * 60;
+//     C = Math.floor((b - B) * 60);
+//     D = Math.floor((c - C) * 60);
+//     console.log("网站已在风雨中运行:" + A + "天" + B + "小时" + C + "分" + D + "秒",'"网站已在风雨中运行:" + A + "天" + B + "小时" + C + "分" + D + "秒"')
+//     setRuntime(() => "网站已在风雨中运行:" + A + "天" + B + "小时" + C + "分" + D + "秒")
+//     // runtime_span =
+//     //   "网站已在风雨中运行:" + A + "天" + B + "小时" + C + "分" + D + "秒";
+//   };
+//   setTimeout(() => show_runtime, 1000);
 
-  //   // 每秒更新已过去的时间
-  //   const interval = setInterval(() => {
-  //     const now = moment();
-  //     const duration = moment.duration(now.diff(blogStartTime));
-  //     setElapsedTime(
-  //       duration.asHours() +
-  //         "小时 " +
-  //         duration.minutes() +
-  //         "分 " +
-  //         duration.seconds() +
-  //         "秒"
-  //     );
-  //   }, 1000);
-
-  //   // 清除定时器（在组件卸载时）
-  //   return () => clearInterval(interval);
-  // }, [blogStartTime]);
-
+  
   return (
     <footer className={className}>
       朝阳 ©{new Date().getFullYear()} 博客已运行{" "}
-      {elapsedTime}
+      {/* <span id="runtime_span">{runtime_span}</span> */}
     </footer>
   );
 };
