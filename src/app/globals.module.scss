@@ -1,0 +1,32 @@
+$headerHeight: 50px;
+$footerHeight: 40px;
+
+.main {
+  .header {
+    height: $headerHeight;
+    background-color: #3498db; // 设置头部背景颜色
+    color: white;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    flex: 1; // 中间部分占满剩余空间
+    overflow: auto; // 允许溢出时出现滚动条
+    padding: 20px; // 设置内边距
+    border: 1px solid #3498db;
+    box-sizing: border-box;
+    height: calc(100vh - $headerHeight - $footerHeight);
+  }
+
+  .footer {
+    height: $footerHeight;
+    background-color: #2ecc71; // 设置底部背景颜色
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
