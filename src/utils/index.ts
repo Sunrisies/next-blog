@@ -10,7 +10,7 @@ type Directory = {
     key: string
   }
 }
-export  const readDirectory = async(dirPath:string) =>{
+export  const readDirectory = async(dirPath:string) => {
   try {
     const entries = await fs.readdir(dirPath);
     const result = [];

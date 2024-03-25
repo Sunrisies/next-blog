@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Head from 'next/head';
-
 import { AntdRegistry } from '@ant-design/nextjs-registry'
 import Header from '@/src/components/Header/header'
 import Footer from '@/src/components/Footer/footer'
 import './globals.css'
+
 import styles from './globals.module.scss'
 import BlogIcon from '@/src/static/blog.svg'
 
